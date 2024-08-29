@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Jura;
+    src: url(font/jura/JuraBook.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0E0E0F;
+    color: #fff;
+    margin: 0 40px;
+    font-family: Jura;
+}
+/* ________NAV_________ */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 18px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav ul li:hover{
+    transform: scale(1.1);
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav .left ul{
+    width: 300px;
+}
+nav .right ul{
+    width: 65px;
+}
+
+/* ________INICIO_________ */
+section{
+  height: calc(100vh - 60px);  
+}
+section#inicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+section#inicio .esquerda, section .direita{
+    max-width: 600px;
+}
+section .category-tittle{
+    font-size: 22px;
+    font-weight: bold;
+    color: #AAAAAA;
+    margin-bottom: 30px;
+}
+#inicio .esquerda p{
+    font-size: 22px;width: 375px;
+    margin-top: 30px;
+    
+}
+#inicio .esquerda p strong{
+    font-size: 43px;
+    
+}
+#inicio .esquerda .social{
+    display: flex;
+    justify-content: center;
+    width: 375px;
+    column-gap: 15px;
+}
+/* ________SKILLS_________ */
+section#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section#skills .esquerda_direita{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1030px;
+}
+
+section#skills .esquerda h3{
+    font-size: 32px;
+}
+section#skills .esquerda ul{
+    list-style: inside;
+    font-size: 22px;
+}
