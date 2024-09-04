@@ -11,15 +11,17 @@ body{
     background-color: #0E0E0F;
     color: #fff;
     font-family: Jura;
-    width: 1275px;
     margin: 0 auto; 
 }
 /* ________NAV_________ */
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 15px;
     font-size: 18px;
+    width: 1000px;
+    margin: 20px auto; 
 }
 nav ul{
     display: flex;
@@ -59,7 +61,7 @@ section#inicio{
     flex-direction: row;
     flex-wrap: wrap;
 }
-section#inicio .esquerda, section .direita{
+section#inicio .esquerda, section#inicio .direita{
     max-width: 500px;
 }
 section .category-tittle{
@@ -132,7 +134,7 @@ section#skills .direita p:hover{
 section#skills .direita div{
     width: 15px;
     height: 15px;
-    background-color: #A2D2FF;
+    background-color: #FFF;
     border-radius: 50%;
 }
 section#skills .direita p:nth-child(1){
@@ -247,12 +249,47 @@ section#skills .soft-skill div{
 
 /* ________CONTATO_________ */
 section#contato{
+    display: flex;
     position: absolute;
-    width: 100vw;
-    
-    background-color: red;
+    height: 100vh;
 }
-#contato .esquerda, #contato .direita{
+section#contato .esquerda{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgb(10,97,175);
+    background: -moz-linear-gradient(180deg, rgba(10,97,175,1) 0%, rgba(220,178,214,1) 80%);
+    background: -webkit-linear-gradient(180deg, rgba(10,97,175,1) 0%, rgba(220,178,214,1) 80%);
+    background: linear-gradient(180deg, rgba(10,97,175,1) 0%, rgba(220,178,214,1) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a61af",endColorstr="#dcb2d6",GradientType=1);
+}
+section#contato .direita{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+}
+section#contato .direita div form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section#contato .direita div form input{
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 1px #AAAAAA;
+    outline: none;
+    color: #FFF;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+/* #contato .direita{
     width: 100%;
 }
 #contato .esquerda{
@@ -277,4 +314,4 @@ section#contato{
 }
 #contato .direita form input{
     width: 400px;
-}
+} */
