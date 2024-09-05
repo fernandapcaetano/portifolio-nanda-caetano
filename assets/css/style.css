@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     background-color: #0E0E0F;
     color: #fff;
@@ -52,7 +53,7 @@ section{
   margin-bottom: 40px;
   max-width: 1000px;
   min-height: calc(100vh - 40px);
-  margin: 0 auto; 
+  
 }
 section#inicio{
     display: flex;
@@ -317,70 +318,18 @@ input:-webkit-autofill {
     border: solid 1px #fff;
     cursor: pointer;
 }
-/* section#contato{
-    display: flex;
-    position: absolute;
-    height: 100vh;
-}
-section#contato .esquerda{
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    background: rgb(10,97,175);
-    background: -moz-linear-gradient(180deg, rgba(10,97,175,1) 0%, rgba(220,178,214,1) 80%);
-    background: -webkit-linear-gradient(180deg, rgba(10,97,175,1) 0%, rgba(220,178,214,1) 80%);
-    background: linear-gradient(180deg, rgba(10,97,175,1) 0%, rgba(220,178,214,1) 80%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a61af",endColorstr="#dcb2d6",GradientType=1);
-}
-section#contato .direita{
-    width: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 40px;
-}
-section#contato .direita div form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
-/* section#contato .direita div form input{
-    width: 300px;
-    background-color: transparent;
-    border: none;
-    border-bottom: solid 1px #AAAAAA;
-    outline: none;
-    color: #FFF;
-    font-size: 20px;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-} */
-/* #contato .direita{
-    width: 100%;
-}
-#contato .esquerda{
-    
-    
-    background: rgb(10,97,175);
-    background: -moz-linear-gradient(180deg, rgba(10,97,175,1) 0%, rgba(220,178,214,1) 80%);
-    background: -webkit-linear-gradient(180deg, rgba(10,97,175,1) 0%, rgba(220,178,214,1) 80%);
-    background: linear-gradient(180deg, rgba(10,97,175,1) 0%, rgba(220,178,214,1) 80%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a61af",endColorstr="#dcb2d6",GradientType=1);
+
+/* tablet */
+@media (max-width:1080px) {
+    body{
+        background-color: red;
+    }
 }
 
-#contato .direita{
-    display: flex;
-   justify-content: center;
-   
+/* celular */
+@media (max-width:785px) {
+    body{
+        background-color: blue;
+    }
 }
-#contato .direita form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#contato .direita form input{
-    width: 400px;
-} */
