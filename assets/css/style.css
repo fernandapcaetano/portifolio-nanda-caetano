@@ -64,7 +64,7 @@ section#inicio{
 section#inicio .esquerda, section#inicio .direita{
     max-width: 500px;
 }
-section .category-tittle{
+.category-tittle{
     font-size: 22px;
     font-weight: bold;
     color: #AAAAAA;
@@ -248,7 +248,76 @@ section#skills .soft-skill div{
 }
 
 /* ________CONTATO_________ */
-section#contato{
+#contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+#contato .esquerda{
+    height: 100%;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(10,97,175);
+    background: -moz-linear-gradient(180deg, rgba(10,97,175,1) 0%, rgba(220,178,214,1) 80%);
+    background: -webkit-linear-gradient(180deg, rgba(10,97,175,1) 0%, rgba(220,178,214,1) 80%);
+    background: linear-gradient(180deg, rgba(10,97,175,1) 0%, rgba(220,178,214,1) 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0a61af",endColorstr="#dcb2d6",GradientType=1);
+}
+#contato .direita{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#contato form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+}
+#contato form input, #contato form textarea{
+    width: 300px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #AAAAAA;
+    color: #fff;
+    font-size: 18px;
+}
+#contato form textarea{
+    border: solid 1px #AAAAAA;
+}
+#contato form input::placeholder, #contato form textarea::placeholder{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+/* Cor de fundo do autocomplete */
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #0E0E0F inset;
+}
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+    -webkit-text-fill-color: #fff !important;
+}
+#contato form button{
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    background-color: #636363;
+    color: #fff;
+    border: solid 1px #fff;
+    cursor: pointer;
+}
+/* section#contato{
     display: flex;
     position: absolute;
     height: 100vh;
@@ -277,8 +346,8 @@ section#contato .direita div form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-section#contato .direita div form input{
+} */
+/* section#contato .direita div form input{
     width: 300px;
     background-color: transparent;
     border: none;
@@ -288,7 +357,7 @@ section#contato .direita div form input{
     font-size: 20px;
     margin-bottom: 10px;
     padding-bottom: 5px;
-}
+} */
 /* #contato .direita{
     width: 100%;
 }
